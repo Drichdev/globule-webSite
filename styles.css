@@ -3,6 +3,7 @@
     --globe: rgb(0, 160, 0);
     --black: black;
     --blanc: white;
+    --violet: rgb(147, 58, 206);
 }
 
 *{
@@ -17,6 +18,18 @@ header{
 
 header .head-top h1{
     text-align: center;
+    font-size: 60px;
+    text-shadow:
+    0 1px #111111,
+    -1px 0 #0f0f0f,
+    -1px 2px #0b0c0c,
+    -2px 1px #121414,
+    -2px 3px #1c1e1f,
+    -3px 2px #26292b,
+    -3px 4px #242729,
+    -4px 3px #1e2022,
+    -4px 5px #808d93,
+    -5px 4px #cdd2d5;
     color: var(--globe);
 }
 
@@ -40,24 +53,95 @@ header .head-bottom ul li a{
 }
 
 .log{
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     background: var(--globe);
-    border-radius: 0 50% 50% 0;
+    border-radius: 50% 0 0 50% ;
+    margin: 5px 10px 0 10px;
 }
 
 main{
-    padding: 10px 20px;
+    padding: 10px 20px 0 20px;
     display: flex;
+    margin-bottom: 0;
 }
 
 main .left{
     width: 70vw;
 }
 
-.space-foot{
-    margin-bottom: 20px;
+.title-one, .title-middle, .title-bottom{
+    margin-bottom: 2px;
+}
 
+.title-one p i, .title-middle p,.title-image p, .text p{
+    text-align: justify;
+}
+.title-bottom{
+    margin-top: 20px;
+}
+.title-image{
+    margin-top: 20px;
+}
+.title-image img{
+    width: 400px;
+    height: 300px;
+    float: left;
+    margin: 10px 10px 0 0;
+}
+
+.text{
+    display: flex;
+}
+
+.text p{
+    width: 400px;
+}
+
+.right-top{
+    height: 150px;
+}
+.right-middle img,.right-bottom img{
+    height: 300px;
+    background-size: cover;
+}
+
+.right-middle h3,.right-bottom h3{
+    color: var(--globe);
+}
+.left .top-log, .middle-log, .bottom-log{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text-middle, .text-bottom,.right-middle h3, .right-bottom h3{
+    width: 300px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.text-bottom{
+    margin-bottom: 30px;
+
+}
+
+.right{
+    margin-left: 15px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.space{
+    width: 3px;
+    margin: 0 15px;
+    background: var(--violet);
+}
+.space-foot{
+    margin-bottom: 10px;
+    margin: 0 20px 20px ;
+    height: 2px;
+    width: 95vw;
+    background: var(--globe);
 }
 
 footer{
