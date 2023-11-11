@@ -4,6 +4,7 @@
     --black: black;
     --blanc: white;
     --violet: rgb(147, 58, 206);
+    --hov: rgb(9, 189, 9);;
 }
 
 *{
@@ -39,17 +40,46 @@ header .head-bottom{
     border-radius: 25px;
 
 }
+
+header .head-bottom ul li:hover {
+  background: var(--globe);
+}
 header .head-bottom ul{
     display: flex;
-    padding:  10px 0;
 }
 
 header .head-bottom ul li{
     margin-left: 20px;
+    padding:  10px 5px;
+
 }
 
 header .head-bottom ul li a{
     color: var(--blanc);
+}
+
+#sub{
+    display: flex;
+    flex-direction: column;
+    visibility: 0;
+    opacity: 0;
+    position: absolute;
+    left: 1;
+    top: 80;
+    visibility: hidden;
+    z-index: 1;
+}
+
+li:hover ul#sub{
+    opacity: 1;
+    top: 70;
+    background: var(--hov);
+    visibility: visible;
+}
+
+#sub li{
+    float: none;
+    width: 100%;
 }
 
 .log{
